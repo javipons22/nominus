@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nominus</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!!</h1>
+    <header class="main-header container-fluid fixed-top">
+        <div class="row justify-content-center">
+            <img src="img/logo.svg" alt="logo nominus" class="main-header__logo">
+        </div>
+    </header>
+    <main class="container-fluid contenido-principal">
+        <div class="row justify-content-center banner">
+            <h1 class="titulo col-7">
+                <span class="titulo__elemento text-fit">mejoramos tu</span>
+                <span class="titulo__elemento text-fit">performance</span>
+                <span class="titulo__elemento text-fit">digital</span>
+            </h1>
+        </div>
+    </main>
+    <div class="temp">
+        
+    </div>
+
+<script src="js/fitty.min.js"></script>
+<script>
+fitty('.text-fit',{
+    minSize: 1,
+    maxSize: 1000
+});
+</script>
 </body>
 </html>

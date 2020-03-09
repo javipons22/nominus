@@ -1,3 +1,40 @@
-h1 {
-    color:red;
+/*
+
+negro oscuro 353535
+azul oscuro 416d79
+marron claro cd9e84
+violeta claro a17b86
+gris claro cccccc
+
+gradiente ecded9 -> a7d1cc
+
+*/
+.main-header {
+  background: #353535;
 }
+.main-header__logo {
+  height: 3.5625em;
+  transform: translateY(20%);
+}
+
+.banner {
+  background: #cccccc;
+  padding: 3.125em 0;
+  margin-top: 3.5625em;
+}
+
+.titulo {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #353535;
+}
+.titulo__elemento {
+  line-height: 90%;
+}
+
+.temp {
+  background: linear-gradient(0deg, #a7d1cc 0%, #ecded9 100%);
+  height: 1500px;
+}
+
+/*# sourceMappingURL=style.css.map */

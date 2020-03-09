@@ -1,0 +1,23 @@
+/*
+
+negro oscuro 353535
+azul oscuro 416d79
+marron claro cd9e84
+violeta claro a17b86
+gris claro cccccc
+
+gradiente ecded9 -> a7d1cc
+
+*/
+
+$negro-oscuro: #353535;
+$azul-oscuro: #416d79;
+$marron-claro: #cd9e84;
+$violeta-claro: #a17b86;
+$gris-claro: #cccccc;
+$gradiente-nominus: linear-gradient(0deg, rgba(167,209,204,1) 0%, rgba(236,222,217,1) 100%);
+
+@function em($size) {
+    $emSize: $size / 16px;
+    @return #{$emSize}em;
+}
