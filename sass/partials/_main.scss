@@ -21,14 +21,20 @@
     text-transform:uppercase;
     color: $negro-oscuro;
     &__elemento {
-        line-height: 90%;
+        line-height:110%;
+    } 
+    &__elemento--last {
+        line-height:80%;
     } 
 
 }
 
-// ESTILOS ADICIONALES
+// SERVICIOS
 
-.temp {
+.servicios {
     background: $gradiente-nominus;
-    height: 1500px;
+}
+
+.servicio {
+    background: rgba(255,255,255,0.5);
 }
