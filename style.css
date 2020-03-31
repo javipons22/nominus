@@ -11,6 +11,7 @@ gradiente ecded9 -> a7d1cc
 */
 .main-header {
   background: #353535;
+  width: 100%;
 }
 .main-header__logo {
   height: 3.5625em;
@@ -41,6 +42,27 @@ gradiente ecded9 -> a7d1cc
 
 .servicio {
   background: rgba(255, 255, 255, 0.5);
+}
+.servicio__cuadro {
+  background: white;
+}
+.servicio .fas, .servicio .far {
+  font-size: 2.7em;
+}
+.servicio__texto {
+  font-size: 0.9em;
+  text-align: center;
+}
+.servicio__titulo {
+  height: 50px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #353535;
+}
+.servicio__titulo-elemento {
+  display: block;
+  width: 100%;
+  line-height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
