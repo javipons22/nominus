@@ -42,9 +42,11 @@ gradiente ecded9 -> a7d1cc
 
 .servicio {
   background: rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 .servicio__cuadro {
   background: white;
+  position: relative;
 }
 .servicio .fas, .servicio .far {
   font-size: 2.7em;
@@ -63,6 +65,28 @@ gradiente ecded9 -> a7d1cc
   display: block;
   width: 100%;
   line-height: 100%;
+}
+.servicio__numero {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.3em;
+  background: white;
+  color: #555;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  z-index: 100;
+  top: 0;
+}
+.servicio__numero--left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.servicio__numero--right {
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */

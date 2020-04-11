@@ -38,8 +38,10 @@
 
 .servicio {
     background: rgba(255,255,255,0.5);
+    position:relative;
     &__cuadro {
         background:white;
+        position:relative;
     }
     .fas,.far {
         font-size:2.7em;
@@ -58,5 +60,27 @@
         display:block;
         width:100%;
         line-height:100%;
+    }
+    &__numero {
+        position:absolute; 
+        width:50px;
+        height:50px;
+        font-weight:bold;
+        font-size:1.3em;
+        background:white;
+        color: #555;
+        border:2px solid #aaa;
+        border-radius:50%; 
+        z-index:100;
+        top:0;
+        &--left {
+            left:0;
+            transform: translate(-50%, -50%);
+        }
+        &--right {
+            right:0;
+            top:0;
+            transform: translate(50%, -50%);
+        }
     }
 }
