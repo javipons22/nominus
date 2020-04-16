@@ -16,7 +16,7 @@
         </div>
     </header>
     <main class="contenido-principal">
-        <div class="banner-container d-flex align-items-center">
+        <section class="banner-container d-flex align-items-center">
             <div class="banner"></div>
             <div class="container">
                 <div class="row justify-content-center justify-content-lg-start d-lg-flex flex-lg-column">
@@ -28,8 +28,9 @@
                     <p class="banner__texto col-8 d-none d-lg-block">"Hoy es importante estar <strong>presente</strong>, </br>ser relevante y añadir valor"</br>- Nick Besbeas -</p>
                 </div>
             </div>
-        </div>
-        <div class="servicios py-lg-5">
+        </section>
+        <section class="servicios py-lg-5 d-flex align-items-center">
+            <div id="animation-background" class="animation-background"></div>
             <div class="container">
                 <div class="row justify-content-center py-4">
                     <div class="col-8 col-md-4 col-lg-3 m-4 m-lg-0 p-0  servicio">
@@ -129,11 +130,19 @@
                     </div>
                 </div>
             </div>     
-        </div>
+        </section>
+        <section class="clientes">
+            <div class="clientes__contenedor container">
+                <div class="row">
+                    <h1 class="clientes__titulo">NUESTROS CLIENTES</h1>
+                </div>
+            </div>
+        </section>
     </main>
     
-
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <script src="js/fitty.min.js"></script>
+<script src="js/lluvia.js"></script>
 <script>
 fitty('.text-fit',{
     minSize: 1,

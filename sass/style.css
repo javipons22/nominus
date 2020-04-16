@@ -9924,13 +9924,12 @@ gradiente ecded9 -> a7d1cc
 }
 
 .servicios {
-  position: relative;
   background: linear-gradient(0deg, #a7d1cc 0%, #ecded9 100%);
-  overflow: hidden;
 }
 
 .servicio {
   background: rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 .servicio__cuadro {
   background: white;
@@ -9977,30 +9976,6 @@ gradiente ecded9 -> a7d1cc
   transform: translate(50%, -50%);
 }
 
-.animation-background {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100%;
-}
-
-.animation-element {
-  width: 25px;
-}
-
-.clientes {
-  background: #353535;
-  width: 100%;
-  height: 50px;
-  padding: 65px 0;
-}
-.clientes__titulo {
-  color: #cd9e84;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.8em;
-  margin: 0 auto;
-}
-
 @media (min-width: 992px) {
   .banner-container {
     height: 70vh;
@@ -10026,14 +10001,6 @@ gradiente ecded9 -> a7d1cc
   .banner__texto {
     margin-top: 25px;
     font-size: 1.3em;
-  }
-
-  .servicios {
-    height: 80vh;
-  }
-
-  .animation-element {
-    width: 35px;
   }
 }
 

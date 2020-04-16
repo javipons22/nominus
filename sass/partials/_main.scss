@@ -43,12 +43,13 @@
 // SERVICIOS
 
 .servicios {
+    position:relative;
     background: $gradiente-nominus;
+    overflow: hidden;
 }
 
 .servicio {
     background: rgba(255,255,255,0.5);
-    position:relative;
     &__cuadro {
         background:white;
         position:relative;
@@ -92,5 +93,33 @@
             top:0;
             transform: translate(50%, -50%);
         }
+    }
+}
+
+// ANIMACION
+
+.animation-background {
+    position:absolute;
+    top: 0;
+    width:100vw;
+    height:100%;
+}
+
+.animation-element {
+    width:25px;
+}
+
+// SECCION CLIENTES
+
+.clientes {
+    background:$negro-oscuro;
+    width:100%;
+    height:50px;
+    padding: 65px 0;
+    &__titulo {
+        color:$marron-claro;
+        font-family: 'Oswald', sans-serif;
+        font-size:1.8em;
+        margin:0 auto;
     }
 }
