@@ -1,0 +1,12 @@
+@include media-breakpoint-up(md) {
+    .clientes {
+        &__imagen {
+            width:75%;
+            margin:0 auto;
+            text-align: center;
+        }
+        &__titulo {
+            font-size:1.9em;
+        }
+    }
+}

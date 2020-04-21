@@ -9991,16 +9991,29 @@ gradiente ecded9 -> a7d1cc
 .clientes {
   background: #353535;
   width: 100%;
-  height: 50px;
-  padding: 65px 0;
+  padding: 55px 0;
 }
 .clientes__titulo {
   color: #cd9e84;
   font-family: "Oswald", sans-serif;
   font-size: 1.8em;
   margin: 0 auto;
+  padding-bottom: 55px;
+}
+.clientes__imagen {
+  width: 100%;
 }
 
+@media (min-width: 768px) {
+  .clientes__imagen {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .clientes__titulo {
+    font-size: 1.9em;
+  }
+}
 @media (min-width: 992px) {
   .banner-container {
     height: 70vh;
@@ -10034,6 +10047,10 @@ gradiente ecded9 -> a7d1cc
 
   .animation-element {
     width: 35px;
+  }
+
+  .clientes__titulo {
+    font-size: 2.4em;
   }
 }
 
