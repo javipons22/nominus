@@ -10004,6 +10004,75 @@ gradiente ecded9 -> a7d1cc
   width: 100%;
 }
 
+.footer {
+  background: #cccccc;
+  width: 100%;
+  padding: 55px 0 0 0;
+}
+.footer__titulo {
+  color: #353535;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8em;
+  margin: 0;
+  padding-bottom: 32px;
+}
+.footer__info-elemento {
+  color: #353535;
+}
+.footer__info-elemento i {
+  font-size: 2.5em;
+  width: 50px;
+  text-align: center;
+}
+.footer__info-tipo {
+  font-weight: bold;
+}
+
+.formulario {
+  width: 95%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.formulario__input-50, .formulario__input-100 {
+  display: block;
+  width: 100%;
+  flex-basis: 100%;
+  border: none;
+  padding: 8px 15px;
+  background: #353535;
+  color: #cd9e84;
+  margin-bottom: 8px;
+}
+.formulario__input-50::placeholder, .formulario__input-100::placeholder {
+  color: #cd9e84;
+}
+.formulario__submit {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #353535;
+  font-weight: bold;
+  background: #cd9e84;
+  padding: 10px 0;
+}
+.formulario__text-area {
+  height: 45%;
+}
+
+.copyright {
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #999;
+  margin: 0 10px;
+  margin-top: 35px;
+}
+.copyright__texto {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
 @media (min-width: 768px) {
   .clientes__imagen {
     width: 75%;
@@ -10012,6 +10081,17 @@ gradiente ecded9 -> a7d1cc
   }
   .clientes__titulo {
     font-size: 1.9em;
+  }
+
+  .footer__titulo {
+    font-size: 1.9em;
+  }
+  .footer__info {
+    border-right: 1px solid #aaa;
+  }
+
+  .copyright__texto {
+    font-size: 0.8em;
   }
 }
 @media (min-width: 992px) {
@@ -10051,6 +10131,11 @@ gradiente ecded9 -> a7d1cc
 
   .clientes__titulo {
     font-size: 2.4em;
+  }
+
+  .footer__titulo {
+    font-size: 2.4em;
+    padding-bottom: 55px;
   }
 }
 

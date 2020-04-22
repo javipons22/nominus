@@ -1,3 +1,6 @@
+// CLASES GENERALES
+
+
 // HEADER
 
 .main-header {
@@ -124,5 +127,74 @@
     }
     &__imagen {
         width:100%;
+    }
+}
+
+.footer {
+    background:$gris-claro;
+    width:100%;
+    padding: 55px 0 0 0;
+    &__titulo {
+        color:$negro-oscuro;
+        font-family: 'Oswald', sans-serif;
+        font-size:1.8em;
+        margin:0;
+        padding-bottom: 32px;
+    }
+    &__info-elemento {
+        color:$negro-oscuro;
+        i {
+            font-size:2.5em;
+            width:50px;
+            text-align: center;
+        }
+    }
+    &__info-tipo {
+        font-weight:bold;
+    }
+}
+
+.formulario {
+    width:95%;
+    display:inline-block;
+    box-sizing: border-box;
+    &__input-50, &__input-100 {
+        display:block;
+        width:100%;
+        flex-basis:100%;
+        border:none;
+        padding: 8px 15px;
+        background:$negro-oscuro;
+        color:$marron-claro;
+        margin-bottom: 8px;
+    }
+    &__input-50::placeholder, &__input-100::placeholder {
+        color:$marron-claro;
+    }
+    &__submit {
+        border:none;
+        outline:none;
+        width:100%;
+        color:$negro-oscuro;
+        font-weight:bold;
+        background:$marron-claro;
+        padding: 10px 0;
+    }
+    &__text-area {
+        height:45%;
+    }
+}
+
+.copyright {
+    color: #777;
+    text-align: center;
+    border-top:1px solid #999;
+    margin: 0 10px;
+    margin-top:35px;
+    &__texto {
+        text-align:center;
+        display:block;
+        width:100%;
+        padding: 15px 0;
     }
 }

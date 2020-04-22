@@ -9,4 +9,17 @@
             font-size:1.9em;
         }
     }
+    .footer {
+        &__titulo {
+            font-size:1.9em;
+        }
+        &__info {
+            border-right: 1px solid #aaa;
+        }
+    }
+    .copyright {
+        &__texto {
+            font-size:0.8em;
+        }
+    }
 }
