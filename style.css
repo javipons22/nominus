@@ -10099,7 +10099,7 @@ gradiente ecded9 -> a7d1cc
 @media (min-width: 992px) {
   .banner-container {
     height: 70vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/nominus/img/banner.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("/img/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
