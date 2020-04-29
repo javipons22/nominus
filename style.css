@@ -9935,6 +9935,7 @@ gradiente ecded9 -> a7d1cc
 .servicio__cuadro {
   background: white;
   position: relative;
+  min-height: 206px;
 }
 .servicio .fas, .servicio .far {
   font-size: 2.7em;
