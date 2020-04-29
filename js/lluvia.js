@@ -1,10 +1,32 @@
 
 $(document).ready(function(){
+
+  var windowSizeHeight = jQuery(".animation-background").height();
+  // keyframes URL
+  // https://www.jqueryscript.net/animation/Set-CSS-Keyframes-jQuery.html
+  $.keyframe.define([{
+    name: 'element-drop',
+    '0%': {
+      'transform': 'translateY(-100px)',
+    },
+    '100%' : {
+      // 'transform': 'translateY(250px)'
+      'transform': 'translateY('+ (windowSizeHeight + 200 )+'px)'
+    }
+  }, {
+    name: 'element-drop-spin',
+    '0%': {
+      'transform':'translateY(-100px) rotate(0deg)'
+    },
+    '100%': {
+      'transform': 'translateY('+ (windowSizeHeight + 200 )+'px) rotate(1500deg)'
+    }
+  }]);
+
   function createElement(time){
 
-    var windowSizeWidth = jQuery(window).width();
-    var windowSizeHeight = jQuery(".animation-background").height();
-    console.log(windowSizeHeight);
+
+        var windowSizeWidth = jQuery(window).width();
         var position = Math.floor(Math.random() * (windowSizeWidth)) + 1;
         var element = Math.floor(Math.random() * 10) + 1;
         var newElement = document.createElement('img');
@@ -15,27 +37,17 @@ $(document).ready(function(){
         jQuery(newElement).css("left",position + 'px');
         //jQuery(newElement).css("width",windowSizeWidth / 50 + 'px');
         try {
-          newElement.animate([
-            // keyframes
-            { transform: 'translateY(-100px)', '-webkit-transform': 'translateY(-100px)' }, 
-            { transform: 'translateY('+ (windowSizeHeight + 100 )+'px)','-webkit-transform': 'translateY('+ (windowSizeHeight + 100 )+'px)' }
-          ], { 
-            // timing options
-            duration: time
-          });
+          // $(newElement).playKeyframe({
+          //   name: 'element-drop',
+          //   duration: time
+          // });
+          $(newElement).playKeyframe('element-drop '+ time + 'ms linear 0s 3 normal forwards', 3);
         } catch(e) {
           console.log(e)
         }
         try {
           if (element == 6 || element == 9 || element == 10){
-            newElement.animate([
-              // keyframes
-              { transform: 'translateY(-100px) rotate(0deg)','-webkit-transform': 'translateY(-100px) rotate(0deg)' }, 
-              { transform: 'translateY('+ (windowSizeHeight + 100 )+'px) rotate(1500deg)','-webkit-transform': 'translateY('+ (windowSizeHeight + 100 )+'px) rotate(1500deg)' }
-            ], { 
-              // timing options
-              duration: time
-            });
+            $(newElement).playKeyframe('element-drop-spin '+ time + 'ms linear 0s 3 normal forwards', 3);
         }
         }catch(e) {
           console.log(e);

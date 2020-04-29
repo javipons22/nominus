@@ -9986,6 +9986,7 @@ gradiente ecded9 -> a7d1cc
 
 .animation-element {
   width: 25px;
+  transform: translateY(-100px);
 }
 
 .clientes {
