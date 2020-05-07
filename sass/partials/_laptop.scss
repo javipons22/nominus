@@ -1,10 +1,6 @@
 @include media-breakpoint-up(lg) {
     .banner-container {
         height:70vh;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url("/img/banner.jpg");
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: right;
         z-index:-2;
     }
     .banner {
@@ -23,7 +19,18 @@
             font-size:1.3em;
         }
     }
-
+    .banner__image {
+        display:inline-block;
+        position:absolute;
+        width:65%;
+        right:0;
+        object-fit: cover;
+        z-index:-2;
+        >img {
+            object-fit: cover;
+            width:100%;
+        }
+    }
     .servicios {
         height:80vh;
     }

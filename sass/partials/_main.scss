@@ -200,3 +200,26 @@
         padding: 15px 0;
     }
 }
+
+.whatsapp-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:#00E676;
+    font-size:35px;
+    height:75px;
+    width:75px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    border-radius: 50%;
+    z-index:10000;
+    &:hover {
+        outline:none;
+        text-decoration: none;
+    }
+}
+
+.banner__image {
+    display:none;
+}
