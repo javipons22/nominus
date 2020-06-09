@@ -18,10 +18,17 @@
     <meta property="og:type" content="website" />
     <!-- FIN VISTA PREVIA FACEBOOK Y WHATSAPP -->
     <title>Nominus | Agencia Digital</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XC5RRS');</script>
+    <!-- End Google Tag Manager -->
     <script src="https://kit.fontawesome.com/95a9ef0fe9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.3.css">
+    <link rel="stylesheet" href="style.4.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166065121-1"></script>
 <script>
@@ -51,6 +58,26 @@ src="https://www.facebook.com/tr?id=656710774697954&ev=PageView&noscript=1"
 <!-- End Facebook Pixel Code -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XC5RRS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- mensaje email -->
+    <div class="email">
+        <div class="email__contenedor email__contenedor--enviado">
+            <a class="email__boton-cerrar">X</a>
+            <p class="email__mensaje">El mensaje fue enviado correctamente!</p>
+            <a class="email__boton-aceptar">ACEPTAR</a>
+        </div>
+        <div class="email__contenedor email__contenedor--no-enviado">
+            <a class="email__boton-cerrar">X</a>
+            <p class="email__mensaje">El mensaje no pudo ser enviado ... Intenta nuevamente</p>
+            <a class="email__boton-aceptar">ACEPTAR</a>
+        </div>
+    </div>
+    <!-- fin mensaje email  -->
+
     <header class="main-header container-fluid fixed-top">
         <div class="row justify-content-center">
             <img src="img/logo.svg" alt="logo nominus" class="main-header__logo">
@@ -269,12 +296,11 @@ src="https://www.facebook.com/tr?id=656710774697954&ev=PageView&noscript=1"
             </div>
         </div>
     </footer>
-<!-- mailchimp -->
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"72224a36c355740a1b344d584","lid":"ebf3212b87","uniqueMethods":true}) })</script>
-<!-- fin mailchimp -->
+
 <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <script src="js/fitty.min.js"></script>
 <script src="js/jquery.keyframes.js"></script>
+<script src="js/mailsentpopup.js"></script>
 <script src="js/lluvia.js"></script>
 
 <script>
