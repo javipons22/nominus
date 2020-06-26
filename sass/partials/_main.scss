@@ -57,6 +57,7 @@
         background:white;
         position:relative;
         min-height:206px;
+        heigth:100%;
     }
     .fas,.far {
         font-size:2.7em;
@@ -96,6 +97,21 @@
             right:0;
             top:0;
             transform: translate(50%, -50%);
+        }
+    }
+    &__boton {
+        font-weight:bold;
+        text-transform:uppercase;
+        text-align:center;
+        width:95%;
+        margin-top:15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background:$negro-oscuro;
+        color:$marron-claro;
+        &:hover {
+            color:white;
+            text-decoration:none;
         }
     }
 }

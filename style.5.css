@@ -9936,6 +9936,7 @@ gradiente ecded9 -> a7d1cc
   background: white;
   position: relative;
   min-height: 206px;
+  heigth: 100%;
 }
 .servicio .fas, .servicio .far {
   font-size: 2.7em;
@@ -9976,6 +9977,21 @@ gradiente ecded9 -> a7d1cc
   right: 0;
   top: 0;
   transform: translate(50%, -50%);
+}
+.servicio__boton {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  width: 95%;
+  margin-top: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #353535;
+  color: #cd9e84;
+}
+.servicio__boton:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .animation-background {
